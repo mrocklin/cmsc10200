@@ -5,29 +5,36 @@
         </title>
     </head>
     <body>
-      <h1> How to submit an Eclipse Project </h1>
-      <h2> Making a JAR File </h2>
-      <p>You will submit your lab and homework projects through Chalk. 
-      <p>Because uploading several <code>.java</code> files can be cumbersome we will package all of the files associated to a project into a single Java Archive or <code>.jar</code> file.</p> This is like a zip file but Java specific.
+      <h1> Submitting Labs and Homeworks to Chalk </h1>
+      <p> You will submit your lab and homework projects through Chalk. The assignments in this class will often be complex (several .java files, some data, a textfile, etc...) and with complexity often comes confusion. The instructions here are intended to minimize course confusion, missing assignments, incorrect grades, etc....  <p>
+      <h2> Standards </h2>
+      <p> It is important for grading purposes that submissions be relatively standardized. This makes life on the grader easier and ensures that your assignment will not fail our automated tests. Each homework or lab assignment will list the files that we expect to receive. When submitting work done in Java please submit a <code>.jar</code> file (instructions below). When submitting written (not-code) work please submit a standard textfile. Fancier formats such as
+      <code>.doc</code> and <code>.pdf</code> are not accepted. 
 
-      <p>Right click on your project and select "export" . In these examples we'll assume it's the first lab but this process works generally.</p>
+      <p> While we will keep diligent records of all assignments it is important to remember that <i>accidents do happen</i>. Please keep copies of your work on your local computer in case something goes wrong. 
+       
+      <h2> Making a JAR File </h2>
+      <p>Because uploading several <code>.java</code> files can be cumbersome we will package all of the files associated to a project into a single Java Archive or <code>.jar</code> file. This is like a zip file but Java specific.
+
+      <p>Right click on your project and select "Export" . In these examples we'll assume it's the first lab but this process works generally.</p>
       <img src="export.png" alt="Exporting a Project"  width=30%>
 
       <p> Select Java, JAR File. Click Next.</p>
-      <img src='JavaJarFile.png' alt="Selecting Jar File" width=30%>
+      <img src='JavaJarFile.png' alt="Selecting Jar File" >
 
-      <p>Check the "Export Java Source Files" Checkbox - This is very important as this includes all of your source code (<code>.java</code> files) and it is not checked by default. If you do not check this box you will not receive a grade.</p>
-      <p> Select a destination for the Jar file that you'll be able to find easily. Select a destination on the desktop if you're unfamiliar with Linux.</p>
-      <img src='jarexport.png' alt="Settings to export the Jar file"  width=30%>
+      <p>Check the "Export Java Source Files" Checkbox - <b>This is very important </b>as this includes all of your source code (<code>.java</code> files) and it is not checked by default. If you do not check this box you will not receive a grade.</p>
+      <p> Select a destination for the Jar file that you'll be able to find easily. Select a destination on the desktop if you're unfamiliar with Linux. You can select this destination by clicking on the "Browse" button.</p>
+      <img src='jarexport.png' alt="Settings to export the Jar file"  >
       
       <h2> Uploading to Chalk </h2>
       <p> Now that we have a <code>.jar</code> file let's submit it to chalk for grading. To use the web on the CS Machines I suggest using either Opera or Iceweasel. You can find them in the <b>Applications</b> menu in the upper left under <b>Internet</b>.
-      <p> Log into Chalk and select the CMSC-10200 course. 
+      <p> Log into Chalk and select the CMSC-10200 course in the lower right. 
+      <p> Select Labs and Lectures from the left sidebar. 
       <p> Upload your <code>.jar</code> file under the appropriate folder.
 
 
-      <h2> Command Line </h2>
-      <p>Congrats! You're done. This section is for those who prefer the command-line rather than using Eclipse. This probably doesn't apply to you so you should probably skip this section. 
+      <h2> Making a Jar File - Command Line </h2>
+      <p> This section is for those who prefer the command-line rather than using Eclipse. This probably doesn't apply to you so you should probably skip this section. 
 
       <p> The commands to create a Java Archive <code>.jar</code> file are as follows. The internet is full of reading on this - most of this material came from the <a href="http://javaworkshop.sourceforge.net/chapter5.html">JavaWorkshop</a> book on sourceforge. Examples below have both a generic part and a part specific to lab1 for clarity. 
       <p> To create a jar archive
