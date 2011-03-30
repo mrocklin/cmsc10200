@@ -1,0 +1,10 @@
+right click on projectname (lab1_username)
+Select Export
+Select Java: JAR File
+Select Export java Source files and resources (IMPORTNT!!!) 
+Select a destination for the Jar file that you'll be able to find easily. Use the desktop if you're unfamiliar with Linux
+Click Finish
+
+Open a browser (I like Opera and Iceweasel)
+Sign into to Chalk
+Submit Jar file

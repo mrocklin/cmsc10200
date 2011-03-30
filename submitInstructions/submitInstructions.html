@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+            Submission Instructions
+        </title>
+    </head>
+    <body>
+      <h1> How to submit an Eclipse Project </h1>
+      <h2> Making a JAR File </h2>
+      <p>You will submit your lab and homework projects through Chalk. 
+      <p>Because uploading several <code>.java</code> files can be cumbersome we will package all of the files associated to a project into a single Java Archive or <code>.jar</code> file.</p> This is like a zip file but Java specific.
+
+      <p>Right click on your project and select "export" . In these examples we'll assume it's the first lab but this process works generally.</p>
+      <img src="export.png" alt="Exporting a Project"  width=30%>
+
+      <p> Select Java, JAR File. Click Next.</p>
+      <img src='JavaJarFile.png' alt="Selecting Jar File" width=30%>
+
+      <p>Check the "Export Java Source Files" Checkbox - This is very important as this includes all of your source code (<code>.java</code> files) and it is not checked by default. If you do not check this box you will not receive a grade.</p>
+      <p> Select a destination for the Jar file that you'll be able to find easily. Select a destination on the desktop if you're unfamiliar with Linux.</p>
+      <img src='jarexport.png' alt="Settings to export the Jar file"  width=30%>
+      
+      <h2> Uploading to Chalk </h2>
+      <p> Now that we have a <code>.jar</code> file let's submit it to chalk for grading. To use the web on the CS Machines I suggest using either Opera or Iceweasel. You can find them in the <b>Applications</b> menu in the upper left under <b>Internet</b>.
+      <p> Log into Chalk and select the CMSC-10200 course. 
+      <p> Upload your <code>.jar</code> file under the appropriate folder.
+
+
+      <h2> Command Line </h2>
+      <p>Congrats! You're done. This section is for those who prefer the command-line rather than using Eclipse. This probably doesn't apply to you so you should probably skip this section. 
+
+      <p> The commands to create a Java Archive <code>.jar</code> file are as follows. The internet is full of reading on this - most of this material came from the <a href="http://javaworkshop.sourceforge.net/chapter5.html">JavaWorkshop</a> book on sourceforge. Examples below have both a generic part and a part specific to lab1 for clarity. 
+      <p> To create a jar archive
+      <pre><blockquote>
+      jar cvf jar-filename   input-files
+      or
+      jar cvf lab1_username.jar lab1_username/
+      </blockquote></pre>
+
+      <p> To view files within a jar archive
+      <pre><blockquote>
+      jar tf jar-filename
+      or
+      jar tf lab1_username.jar
+      </blockquote></pre>
+      
+      <p> To extract files from a jar archive
+      <pre><blockquote>
+      jar xf jar-filename files_to_extract
+      or
+      jar xf lab1_username.jar Program1.java Program1.java
+      or 
+      jar xf lab1_username.jar #leave second argument blank to extract all files
+      </blockquote></pre>
+    </body>
+</html>
+
