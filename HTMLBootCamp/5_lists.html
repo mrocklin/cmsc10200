@@ -4,29 +4,19 @@
     </head>
     <body>
         <h1> HTML Tips </h1>
-        
         <h2> Headers </h2>
-        <p> Headers can be called using the h1,h2,h3, ... tags. Lower numbers are more important. Bigger numbers imply subsections
         <h2> Formatting </h2>
-        <p> We also use tags to imply <b>bold</b>, <i>italics</i>, <code>code</code>, etc....
-        <p> More examples of formatting tags can be found at the following website.
-        <p> http://www.w3schools.com/html/html_formatting.asp </p>
         <h2> Hyperlinks </h2> 
-        <p> In the last section we listed a URL of a webpage that held more information about the topic. A great thing about HTML is that we can embed these links directly into the text. This is done with the &lt;a&gt; tag and by specifying an href <i> attribute</i> as follows. </p>
-
-        <p>The text : &lt;a href="http://www.google.com"&gt;Google&lt;/a&gt; yields <a href="http://www.google.com">Google</a>
-        <p> In this example the &lt;a&gt;&lt;/a&gt; tag surrounds the text "Google" and is given the attribute href with value "http://www.google.com" 
-        <p> For more information about links see <a href="http://www.w3schools.com/html/html_links.asp">this page</a>
-    
         <h2> Images </h2>
-        <p> Images are handled very similarly to links. Standard syntax to include an image of Tim Berners-Lee, originator of the term HTML, looks like the folowing:
-        <img src="http://upload.wikimedia.org/wikipedia/commons/c/c8/Tim_Berners-Lee_April_2009.jpg" alt="An image of Tim Berners-Lee" width=20% align="right"/>
-        <p> &lt;img src="http://upload.wikimedia.org/wikipedia/commons/c/c8/Tim_Berners-Lee_April_2009.jpg" alt="Tim Berners-Lee" width=20% align="right"/&gt;
-        <p> We specify the source location of the image using the "src" attribute. In this case the source is a URL linking to a wikipedia image. We can also have src point to something local in our directory. I've downloaded this image and saved it locally in <code>images/tim.jpg</code>. We can rewrite the image element as follows:
-        <p> &lt;img src="images/tim.jpg" alt="Tim Berners-Lee" width=20% align="right"/&gt;
-        <p> There are a few other attributes present, "alt", "width", "align" which give us greater control about where the image goes. A list of other handy image attributes are available <a href="http://www.w3schools.com/tags/tag_IMG.asp">here</a>
         <h2> Lists </h2>
-        Lists are easy. Use the &lt;ol&gt; tag for <i>ordered lists</i>, the &lt;ul&gt; for <i>unordered lists</i>, and the &lt;li&gt;  tag for individual bullet points. So far we've learned about
+        Lists are easy. There are ordered lists (<code>ol</code>) and unordered lists (<code>ul</code>)
+        <ol>
+            <li> Headers </li>
+            <li> Formatting </li>
+            <li> Hyperlinks </li>
+            <li> Images </li>
+            <li> Lists </li>
+        </ol>
         <ul>
             <li> Headers </li>
             <li> Formatting </li>
@@ -34,7 +24,6 @@
             <li> Images </li>
             <li> Lists </li>
         </ul>
-        This is a good base for thinking of webpages as documents. Understanding these elements is enough to build a great personal webpage.
     </body>
 
 </html>

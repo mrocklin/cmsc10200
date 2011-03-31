@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> HTML Example </title>
+        <link rel="stylesheet" type="text/css" href="basicstyle.css">
+    </head>
+    <body>
+        <h1> HTML Tips </h1>
+        <h2> Headers </h2>
+        <p> Headers can be called using the <code>h1,h2,h3, ...</code> tags. Lower numbers are more important. Bigger numbers imply subsections
+        <h2> Formatting </h2>
+        <p> We also use tags to imply <b>bold</b>, <i>italics</i>, <code>code</code>, etc....
+        <p> More examples of formatting tags can be found at the following website.
+        <p> http://www.w3schools.com/html/html_formatting.asp 
+        <h2> Hyperlinks </h2> 
+        <p> The <code>a</code> tag can be used to link to external websites like <a href=http://www.yahoo.com>Yahoo!</a>, <a href="http://www.google.com">Google</a>, or <a href="http://en.wikipedia.org/en/Html">Wikipedia's article on HTML</a>.
+        <p> It can also be used to link to local websites like <a href=0_helloworld.html>The HelloWorld example of this tutorial</a>.
+
+        <p> For more information about links see <a href="http://www.w3schools.com/html/html_links.asp">this page</a>
+        <h2> Images </h2>
+        <p> Images are handled very similarly to links. To the right we've included two images of Tim Berners-Lee, the originator of the term HTML. The rightmost image is served from the wikipedia servers, the left image is served from this computer. 
+        
+        <img src="http://upload.wikimedia.org/wikipedia/commons/c/c8/Tim_Berners-Lee_April_2009.jpg" alt="An image of Tim Berners-Lee" width=20% align="right"/>
+        
+        <img src="images/tim.jpg" alt="An image of Tim Berners-Lee" width=20% align="right">
+        
+        <p> We specify the source location of the image using the "src" attribute. The src can be any URL, usually either a link to an image on the web or a file on our own computer. I've downloaded this image and saved it locally in <code>images/tim.jpg</code>. 
+
+        <p> There are a few other attributes present. "alt" is the alternative text for displays that don't handle images. "width" and "align" give control about image size and placement. A list of other handy image attributes are available <a href="http://www.w3schools.com/tags/tag_IMG.asp">here</a>
+        <h2> Lists </h2>
+        Lists are easy. There are ordered lists (<code>ol</code>) and unordered lists (<code>ul</code>)
+        <ol>
+            <li> Headers </li>
+            <li> Formatting </li>
+            <li> Hyperlinks </li>
+            <li> Images </li>
+            <li> Lists </li>
+        </ol>
+        <ul>
+            <li> Headers </li>
+            <li> Formatting </li>
+            <li> Hyperlinks </li>
+            <li> Images </li>
+            <li> Lists </li>
+        </ul>
+        <h2> Tables </h2>
+        <p> We create and build tables using the tags <code>table, tr, td, th</code> for table object, table row, table data, and table header. Here is an example which lists some users and their e-mails:
+        <table border="1">
+            <th> Name </th>
+            <th> E-Mail </th>
+            <tr>
+                <td>Alice</td>
+                <td>asmith@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>bjones@uchicago.edu</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>charlierocks2852@aol.com</td>
+            </tr>
+            <tr>
+                <td>Devon</td>
+                <td>devon.woods@yahoo.com</td>
+            </tr>
+        </table>
+
+        <p> Most of this was taken from <a href="http://www.w3schools.com/html/html_tables.asp">this website</a>.
+
+        <p> This is a good base for thinking of webpages as documents. Understanding these elements is enough to build a great personal webpage.
+    </body>
+
+</html>
+

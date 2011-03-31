@@ -1,0 +1,34 @@
+body {
+	background: cornsilk; color: black;
+	font-family: helvetica, sans-serif;
+	margin-left: 2%; margin-right: 2%;
+}
+
+a:link {color: blue;} /* unvisited links */
+a:visited {color: blue;} /* visited links */
+a:active {color: green;} /* when user clicks link */
+a:hover {color: red;} /* when hovering over link */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: helvetica, sans-serif;
+	color: navy;
+	text-align: center;
+	margin-top: lem; margin-bottom: lem;
+}
+
+pre, code {font-family: monospace;}
+
+.box {
+	border: solid;
+	border-width: thin;
+	width: 100%;
+	padding: lem;
+}
+
+b {color: maroon;}
+
+p.dropcap:first-letter {
+	font-size: 300%;
+	float: left;
+	color: maroon;
+}
