@@ -1,34 +1,35 @@
 <html>
+    <head>
+        <title>HTML Forms Example</title>
     <body>
-        <form>
-            First Name: <input type='text'><br>
-            Last Name: <input type='text'>
-        </form>
-        
-        <form>
-            First Name: <input type='text' name="firstname" value="Matthew"><br>
-            Last Name: <input type='text' name="lastname" value="Rocklin"><br>
+        <h3> Simple Example 1: Textboxes</h3>
+        <form method="post" action="http://tomcat-cmsc.cs.uchicago.edu:8180/mrocklin/actionpage.jsp">
+            First Name: <input type='text' name="firstname"><br>
+            Last Name: <input type='text' name="lastname"><br>
             <input type='submit' value='Submit'>
         </form>
-
-        <form>
+        
+        <h3> Simple Example 2: Radio buttons</h3>
+        <form method="post" action="some_local_directory/actionpage2.jsp">
             <input type="radio" name="sex" value="male"> Male <br>
-            <input type="radio" name="sex" value="female"> Female
+            <input type="radio" name="sex" value="female"> Female<br>
+            <input type="submit" value="Submit">
         </form>
+        
 
+        <h3> Multi-Element Example </h3>
         <FORM action="http://somesite.com/prog/adduser" method="post">
             <P>
-            <LABEL for="firstname">First name: </LABEL>
-            <INPUT type="text" id="firstname"><BR>
-            <LABEL for="lastname">Last name: </LABEL>
-            <INPUT type="text" id="lastname"><BR>
-            <LABEL for="email">email: </LABEL>
-            <INPUT type="text" id="email"><BR>
+            First name: <INPUT type="text" id="firstname"><BR>
+            Last name:  <INPUT type="text" id="lastname"><BR>
+            email:      <INPUT type="text" id="email"><BR>
             <INPUT type="radio" name="sex" value="Male"> Male<BR>
             <INPUT type="radio" name="sex" value="Female"> Female<BR>
             <INPUT type="submit" value="Send"> <INPUT type="reset">
             </P>
         </FORM>
+    <h3> Finally </h3>
+    There are many more form elements. They all work very similarly.  Check out <a href="http://jsp.davidcastro.com/htmlformcopyme.jsp">David Castro's tutorial</a> or <a href="http://www.tizag.com/htmlT/forms.php">this Tizag tutorial</a> for more demonstrations.
     </body>
 </html>
 
