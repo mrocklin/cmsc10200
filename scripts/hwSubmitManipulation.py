@@ -32,16 +32,14 @@ def createJoinedFiles():
     if not cnetid:
       pass
     myfiles = glob('HW*_%s*/*.java'%cnetid)
+    myfiles = [m for m in myfiles if 'GameTester.java' not in m]
     myfiles.sort()
     printfile = open('joined_%s.txt'%cnetid, 'w')
     printfile.write(joinFiles(myfiles))
     printfile.close()
 
 
-
-
-
-def go():
+def unjar():
   jarfiles = glob('*.jar')
 
   for jfile in jarfiles:
@@ -51,6 +49,9 @@ def go():
     os.chdir(dir);
     os.system('jar xf %s'%jfile);
     os.chdir('..');
+
+
+def go():
   txtfiles = [f for f in glob('*.txt') if len(f.split('_'))>2]
   txtfiles.sort()
   for txt in txtfiles:
