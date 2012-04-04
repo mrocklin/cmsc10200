@@ -1,3 +1,19 @@
-This is a repo for class materials related to CMSC 10200
-test
+This repository contains partial course materials for 
 
+CMSC-10200 Introduction to Web Application Programming 
+at 
+The University of Chicago 
+taught by Professor Salveter, Spring 2011, 2012
+
+The only thing of interest to students in this repository is the materials for 
+the HTML Bootcamp. 
+
+The source for these files can be accessed online at 
+https://github.com/mrocklin/cmsc10200/tree/master/HTMLBootCamp
+
+These html files can be viewed normally in your browser at
+http://mrocklin.github.com/cmsc10200/HTMLBootCamp/
+
+Author
+------
+Matthew Rocklin
