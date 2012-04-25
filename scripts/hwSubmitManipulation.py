@@ -31,9 +31,11 @@ def createJoinedFiles():
   for cnetid in cnetids:
     if not cnetid:
       pass
-    myfiles = glob('HW*_%s*/*.java'%cnetid)
+#    myfiles = glob('HW*_%s*/*.java'%cnetid)
+    myfiles = glob('HW*_%s*/*/*.jsp'%cnetid)
+#    myfiles = [m for m in myfiles if 'GameTester.java' not in m]
     myfiles.sort()
-    myfiles = [file for file in myfiles if 'Data.java' not in file]
+#   myfiles = [file for file in myfiles if 'Data.java' not in file]
     printfile = open('joined_%s.txt'%cnetid, 'w')
     printfile.write(joinFiles(myfiles))
     printfile.close()
@@ -51,21 +53,6 @@ def unjar():
     os.system('jar xf %s'%jfile);
     os.chdir('..');
 
-def go():
-  jarfiles = glob('*.jar')
-
-  for jfile in jarfiles:
-    dir = dirname(jfile)
-    os.mkdir(dir)
-    os.system('mv %s %s'%(jfile,dir));
-    os.chdir(dir);
-    os.system('jar xf %s'%jfile);
-    os.chdir('..');
-#  txtfiles = [f for f in glob('*.txt') if len(f.split('_'))>2]
-#  txtfiles.sort()
-#  for txt in txtfiles:
-#    os.system('enscript -r2 -P ry160b-2 '+txt)
-
 def output():
   dirs = [x for x in sorted(glob('HW5_*')) if '.txt' not in x and '.html' not in x]
   homeworkdir = '/home/mrocklin/Downloads/hw5/'
@@ -75,4 +62,11 @@ def output():
     f = open(homeworkdir+'output_'+username(dir)+'.txt', 'w')
     f.write(pipe.read())
     f.close();
+
+def go():
+  txtfiles = [f for f in glob('*.txt') if len(f.split('_'))>2]
+  txtfiles.sort()
+  for txt in txtfiles:
+    os.system('enscript -r2 -P ry160b-2 '+txt)
+
 
