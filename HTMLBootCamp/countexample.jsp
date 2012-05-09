@@ -11,6 +11,7 @@ int limit = 5;
     <%for(int count = 1; count <= limit; count++){%>
       <li> <%=count%> cubed is <%=count*count*count%> </li>
     <%}%>
+    </ul>
 
 
  </BODY>
